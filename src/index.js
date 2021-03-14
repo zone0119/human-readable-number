@@ -30,13 +30,8 @@ module.exports = function toReadable (number) {
             result = razryad_100(number);
         }
         
-        
 
-
-
-    
-
-          console.log('result: ' + result);
+          return result;
 
 }
 
