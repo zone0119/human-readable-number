@@ -50,16 +50,15 @@ function razryad_10(number)
     result =  ty10_90[razryadDesyatkov] + ' ' + razryad_1(razryadDesyatkovEdinits);
     return result;
 }
-
 function razryad_100(number)
 {   
-    //997
+    //897
     //'nine hundred ninety seven'
     var razryadSoten = Math.trunc(number/100); //9
     var razryadDesyatkov = Math.trunc(number/10); //99
-    var razryadDesyatkovEdinits = number - (razryadDesyatkov*10); //8
+    var razryadDesyatkovEdinits = number - (razryadSoten*100); //8
 
-    result =  razryad_1(razryadSoten) + ' hundred ' + razryad_10(razryadDesyatkov);
+    result =  razryad_1(razryadSoten) + ' hundred ' + razryad_10(razryadDesyatkovEdinits);
     return result;
 }
 
